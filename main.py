@@ -7,14 +7,14 @@ def get_book_text(file_path):
         file_contents = f.read()
     return file_contents
 def book():
-    book_path = sys.argv[1] #updated path
+    book_path = sys.argv[1]
     text = get_book_text(book_path)
     return text
 from stats import num_words
 from stats import count_characters
 from stats import sort_characters
 print("============ BOOKBOT ============")
-print(f"Analyzing book found at {sys.argv[1]}...") #updated path
+print(f"Analyzing book found at {sys.argv[1]}...")
 print("----------- Word Count ----------")
 num_words(book())
 print("--------- Character Count -------")
